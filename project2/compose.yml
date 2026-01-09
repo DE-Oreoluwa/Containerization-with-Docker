@@ -1,0 +1,27 @@
+services:
+    app-db:
+        container_name: app_database
+        image: postgres:18-alpine
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_PASSWORD=postgres
+        volumes:
+            - app-data-volume:/var/lib/postgresql/data
+    csv-app:
+        container_name: streamlit_app2
+        image: streamlitapp2:latest
+        ports:
+            - "8501:8501"
+        env_file:
+            - .env
+        depends_on:
+            - app-db
+
+volumes:
+    app-data-volume:
+
+
+
+
+
