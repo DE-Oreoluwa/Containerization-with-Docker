@@ -6,3 +6,17 @@ The two folders contain a dockerfile, .py file and requirements.txt files while 
 The first one enables you to build a streamlit web app built without a database while the second one with compose.yml file has a postgres database. 
 
 A CVS file for testing the app is the student.csv file attached to the repo
+
+## Project 1
+Docker repo link: https://hub.docker.com/r/sundayore/streamlitapp
+#### To build the Image
+Run this on your terminal
+
+    docker pull sundayore/streamlitapp:v1
+
+## Project 2
+Docker repo link: https://hub.docker.com/r/sundayore/streamlitapp2
+#### To build the Image
+Run this on your terminal
+
+    docker pull sundayore/streamlitapp2:v1
